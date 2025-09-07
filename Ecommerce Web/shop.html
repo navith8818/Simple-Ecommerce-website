@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="244173D.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <title>Shop</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid text-center upper_header">
+        <div class="row">
+          <div class="col up_head_left">
+            <h5>FREE SHIPPING ON ALL ORDERS OVER <span> $20.00</span></h5>
+          </div>
+          <div class="col up_head_right">
+            <div class="social-icons">
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://linkedin.com" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="mailto:example@email.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid text-center below_header p-2">
+        <div class="row mobile_header">
+          <div class="col mobile_head_left">
+            <div class="logo">
+              <a href="244173D.html"
+                ><img src="images/logo-2.svg" alt="logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col mobile_head_right">
+            <div class="off_screen_menu">
+              <input type="search" placeholder="Search products" />
+              <ul>
+                <li><a href="244173D.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="#">My Account</a></li>
+              </ul>
+            </div>
+            <nav>
+              <div class="ham_menu" id="ll">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col below_header_left">
+            <div class="logo">
+              <a href="244173D.html"
+                ><img src="images/logo-2.svg" alt="logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-5 below_head_center">
+            <nav>
+              <ul>
+                <li><a href="244173D.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col below_head_right">
+            <input type="text" placeholder="Search products" />
+            <a href="#"
+              ><img
+                width="32"
+                height="32"
+                src="https://img.icons8.com/windows/32/person-male.png"
+                alt="person-male"
+            /></a>
+            <a href="#"
+              ><img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/ios/50/like--v1.png"
+                alt="like--v1"
+            /></a>
+            <a href="#"
+              ><img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/ios/50/shopping-bag--v1.png"
+                alt="shopping-bag--v1"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="p-0">
+      <div class="head_card container-fluid">
+        <div class="banner_text">
+          <h1>Shop</h1>
+        </div>
+      </div>
+      <div class="container filters_wrapper">
+        <div class="container filter_main">
+          <div class="filter_left">
+            <label for="sort">Sort By :</label>
+            <select name="sort" id="sort">
+              <option value="featured">Featured</option>
+              <option value="featured">Newest</option>
+              <option value="featured">Price: High-Low</option>
+              <option value="featured">Price: Low-High</option>
+            </select>
+          </div>
+          <div class="filter_right">
+            <div class="off_screen_filter">
+              <div class="off_screen_filter_head">
+                <h3>Filters</h3>
+                <div class="cut_filter">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="off_screen_filter_body">
+                <div class="price_range">
+                  <h4>Price Range</h4>
+                  <div class="progress_bg">
+                    <div class="progress_bar"></div>
+                    <div class="range_input">
+                      <input
+                        type="range"
+                        class="range_min"
+                        min="0"
+                        max="1000000"
+                        value="0"
+                        step="1000"
+                      />
+                      <input
+                        type="range"
+                        class="range_max"
+                        min="0"
+                        max="1000000"
+                        value="1000000"
+                        step="1000"
+                      />
+                    </div>
+                  </div>
+                  <div class="price">
+                    <div class="price_left">
+                      <span>Min Price</span>
+                      <input type="number" class="number_min" value="0" />
+                    </div>
+                    <div class="price_right">
+                      <span>Max Price</span>
+                      <input type="number" class="number_max" value="1000000" />
+                    </div>
+                  </div>
+                </div>
+                <div class="availability">
+                  <h4>Availability</h4>
+                  <input type="checkbox" id="in_stock" />
+                  <label for="in_stock">In Stock</label> <br />
+                  <input type="checkbox" id="out_of_stock" />
+                  <label for="in_stock">Out Of Stock</label> <br />
+                  <input type="checkbox" id="pre_order" />
+                  <label for="in_stock">Pre Order</label> <br />
+                  <input type="checkbox" id="coming_soon" />
+                  <label for="in_stock">Coming Soon</label> <br />
+                </div>
+              </div>
+            </div>
+            <div class="filter">
+              <i class="fas fa-sliders-h"></i>
+              <span>Filters</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="conyainer-fluid shop main">
+        <div class="container text-center product_content active">
+          <div class="row">
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/rtx 1.webp" class="show" alt="" />
+                  <img src="images/rtx 1_2.webp" class="hide" alt="" /></div
+              ></a>
+              <p>Gigabyte GeForce RTX 5090 WINDFORCE OC 32G</p>
+              <span>$135.00</span>
+              <div class="prod_color_line">
+                <div
+                  class="prod_color_1"
+                  style="background-color: #6b7faa"
+                ></div>
+                <div class="prod_color_2" style="background-color: #000"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/rtx 2.png" class="show" alt="" />
+                  <img src="images/rtx 2_2.png" class="hide" alt="" /></div
+              ></a>
+              <p>MSI GeForce RTX™ 5090 32G GAMING TRIO OC</p>
+              <span>$155.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #000"></div>
+                <div class="prod_color_2" style="background-color: #fff"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/rtx 3.png" class="show" alt="" />
+                  <img src="images/rtx 3_2.png" class="hide" alt="" /></div
+              ></a>
+              <p>MSI GeForce RTX™ 5090 32G VENTUS 3X OC</p>
+              <span>$180.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #fff"></div>
+                <div class="prod_color_2" style="background-color: #000"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/rtx 4.png" class="show" alt="" />
+                  <img src="images/rtx 4_2.png" class="hide" alt="" /></div
+              ></a>
+              <p>AORUS GeForce RTX™ 5090 MASTER 32G</p>
+              <span>$120.00</span>
+              <div class="prod_color_line">
+                <div
+                  class="prod_color_1"
+                  style="background-color: rgb(56, 23, 199)"
+                ></div>
+                <div class="prod_color_2" style="background-color: #000"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center product_content active">
+          <div class="row">
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img
+                    src="images/keyboard 1.png"
+                    class="show"
+                    alt="keyboard"
+                  />
+                  <img
+                    src="images/keyboard 1_2.png"
+                    class="hide"
+                    alt="keyboard"
+                  /></div
+              ></a>
+              <p>Logitech Pro X TKL</p>
+              <span>$149.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #000"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img
+                    src="images/keyboard 3_2.webp"
+                    class="show"
+                    alt="keyboard"
+                  />
+                  <img
+                    src="images/keyboard 3.webp"
+                    class="hide"
+                    alt="keyboard"
+                  /></div
+              ></a>
+              <p>ZIFRIEND H61K Mechanical</p>
+              <span>$149.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #000"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img
+                    src="images/keyboard 4.png"
+                    class="show"
+                    alt="keyboard"
+                  />
+                  <img
+                    src="images/Keyboard 4_2.png"
+                    class="hide"
+                    alt="keyboard"
+                  /></div
+              ></a>
+              <p>Redragon K631</p>
+              <span>$149.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #000"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img
+                    src="images/keyboard 2.webp"
+                    class="show"
+                    alt="keyboard"
+                  />
+                  <img
+                    src="images/keyboard 2_2.webp"
+                    class="hide"
+                    alt="keyboard"
+                  /></div
+              ></a>
+              <p>FANTECH K511 Hunter Pro</p>
+              <span>$175.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: red"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center product_content active">
+          <div class="row">
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/product 1.png" class="show" alt="" />
+                  <img src="images/product 1_1.png" class="hide" alt="" /></div
+              ></a>
+              <p>HyperX SoloCast</p>
+              <span>$135.00</span>
+              <div class="prod_color_line">
+                <div
+                  class="prod_color_1"
+                  style="background-color: #6b7faa"
+                ></div>
+                <div class="prod_color_2" style="background-color: #000"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/product 2.png" class="show" alt="" />
+                  <img src="images/product 2_2.png" class="hide" alt="" /></div
+              ></a>
+              <p>Corsair Void Elite</p>
+              <span>$155.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #000"></div>
+                <div class="prod_color_2" style="background-color: #fff"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/product 3.png" class="show" alt="" />
+                  <img src="images/product 3_2.png" class="hide" alt="" /></div
+              ></a>
+              <p>Corsair Void Elite</p>
+              <span>$180.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #fff"></div>
+                <div class="prod_color_2" style="background-color: #000"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/chair.png" class="show" alt="" />
+                  <img src="images/chair 1_2.png" class="hide" alt="" /></div
+              ></a>
+              <p>FANTECH CHIEF II HG20</p>
+              <span>$120.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: pink"></div>
+                <div class="prod_color_2" style="background-color: #000"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center product_content active">
+          <div class="row">
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/mouse 1.png" class="show" alt="mouse" />
+                  <img
+                    src="images/mouse 1_2.png"
+                    class="hide"
+                    alt="mouse"
+                  /></div
+              ></a>
+              <p>Logitech G502 X</p>
+              <span>$149.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #fff"></div>
+                <div class="prod_color_2" style="background-color: #000"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/mouse 2.webp" class="show" alt="mouse" />
+                  <img
+                    src="images/mouse 2_2.png"
+                    class="hide"
+                    alt="mouse"
+                  /></div
+              ></a>
+              <p>RAZER Naga Pro</p>
+              <span>$175.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #000"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/mouse 3.png" class="show" alt="mouse" />
+                  <img
+                    src="images/mouse 3_2.png"
+                    class="hide"
+                    alt="mouse"
+                  /></div
+              ></a>
+              <p>Logitech G403 HERO</p>
+              <span>$192.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #000"></div>
+                <div class="prod_color_2" style="background-color: #fff"></div>
+              </div>
+            </div>
+            <div class="col prod_card p-0">
+              <a href="product.html"
+                ><div class="product_img_box">
+                  <img src="images/mouse 4.png" class="show" alt="mouse" />
+                  <img
+                    src="images/mouse 4_2.png"
+                    class="hide"
+                    alt="mouse"
+                  /></div
+              ></a>
+              <p>Logitech G402 Hyperion Fury</p>
+              <span>$145.00</span>
+              <div class="prod_color_line">
+                <div class="prod_color_1" style="background-color: #fff"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container next_page_main">
+          <div class="next_page_center">
+            <div class="page active"><span>1</span></div>
+            <div class="page"><span>2</span></div>
+            <div class="page"><span>3</span></div>
+            <div class="page"><span>4</span></div>
+            <a href=""
+              ><div class="page"><span>></span></div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid main_footer">
+        <div class="container second_footer">
+          <div class="row top_footer">
+            <div class="col footer_left">
+              <div class="logo_box">
+                <img src="images/logo-white.svg" alt="" />
+              </div>
+              <div class="address">
+                <p>110/2,Pamunuwa , Maharagama</p>
+                <span>Get Direction ↗</span>
+              </div>
+              <div class="footer_contact">
+                <div class="mail">
+                  <i class="fas fa-envelope"></i>
+                  <span>modave@gmail.com</span>
+                </div>
+                <div class="phone">
+                  <i class="fas fa-phone"></i>
+                  <span>011 2 579 579</span>
+                </div>
+              </div>
+              <div class="social">
+                <div class="social-icons">
+                  <a href="https://facebook.com" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://twitter.com" target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="https://instagram.com" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="https://linkedin.com" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col footer_center">
+              <div class="center_left">
+                <ul class="p-0">
+                  <li class="list_head">Infomation</li>
+                  <li><a href="about us.html">About Us</a></li>
+                  <li><a href="#">Our Stories</a></li>
+                  <li><a href="#">Size Guide</a></li>
+                  <li><a href="contact us.html">Contact us</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">My Account</a></li>
+                </ul>
+              </div>
+              <div class="center_right">
+                <ul>
+                  <li class="list_head">Customer Services</li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">Return & Refund</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Orders FAQs</a></li>
+                  <li><a href="#">My Wishlist</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col footer_right">
+              <h5>Newsletter</h5>
+              <p>
+                Sign up for our newsletter and get 10% off your first purchase
+              </p>
+              <div class="newsletter_mail">
+                <input type="email" placeholder="Enter your e-mail" />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+              <div class="terms">
+                <input type="checkbox" name="terms" id="terms" />
+                <span
+                  >By clicking subcribe, you agree to the
+                  <a href="">Terms of Service</a> and
+                  <a href="">Privacy Policy</a>.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="bottom_footer">
+            <div class="bot_footer_left">
+              <p>©2025 Modave. All Rights Reserved.</p>
+            </div>
+            <div class="bot_footer_right">
+              <p>payment :</p>
+              <img src="images/img-1.png" alt="" />
+              <img src="images/img-2.png" alt="" />
+              <img src="images/img-3.png" alt="" />
+              <img src="images/img-4.png" alt="" />
+              <img src="images/img-5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="244173D.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
